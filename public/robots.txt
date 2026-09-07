@@ -1,0 +1,6 @@
+# Robots.txt for Talent Bridge Global Solutions Ltd
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://talentbridgesolutions.co.ke/sitemap.xml

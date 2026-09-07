@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bi-Fold Leaflet (4-Page Folded Flyer) | Talent Bridge Global Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #F1F5F9;
+      color: #0F172A;
+      padding: 24px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .no-print {
+      max-width: 1000px;
+      margin: 0 auto 16px auto;
+      background: #FFFFFF;
+      padding: 14px 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .print-btn {
+      background: #0F2B48;
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .bifold-spread {
+      max-width: 1000px;
+      margin: 0 auto 30px auto;
+      background: #FFFFFF;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 600px;
+    }
+    .page-box {
+      padding: 36px 32px;
+      position: relative;
+    }
+    .page-box:first-child {
+      border-right: 1px dashed #CBD5E1;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: #0F2B48;
+      margin-bottom: 12px;
+    }
+    @media print {
+      body { background: transparent; padding: 0; }
+      .no-print { display: none; }
+      .bifold-spread { box-shadow: none; margin: 0; page-break-after: always; }
+      @page { size: A4 landscape; margin: 8mm; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print">
+    <div>
+      <strong style="color:#0F2B48;">4-Page Folded Bi-Fold Flyer (A4 Folded to A5)</strong>
+      <div style="font-size:11px; color:#64748B;">Contains Spread 1 (Inside Pages 2 and 3) and Spread 2 (Back Page 4 and Front Page 1).</div>
+    </div>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <!-- SPREAD 1: INSIDE PAGES 2 and 3 -->
+  <div class="bifold-spread">
+    <!-- Page 2: Inside Left -->
+    <div class="page-box">
+      <div style="font-size:10px; font-weight:700; color:#2EA44F; text-transform:uppercase; margin-bottom:8px;">Page 2 • Core Capabilities</div>
+      <h2>Strategic HR and Compliance Architecture</h2>
+      <p style="font-size:12.5px; color:#475569; line-height:1.6; margin-bottom:14px;">
+        Designed for emerging enterprises requiring robust governance without excessive personnel overhead.
+      </p>
+
+      <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:12px; border-radius:6px; margin-bottom:12px;">
+        <strong style="font-size:12px; color:#0F2B48;">1. Fractional HRBP Operations</strong>
+        <p style="font-size:11px; color:#64748B; margin-top:2px;">Workforce planning, performance metrics, and leadership coaching.</p>
+      </div>
+
+      <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:12px; border-radius:6px; margin-bottom:12px;">
+        <strong style="font-size:12px; color:#0F2B48;">2. Policy and Contract Development</strong>
+        <p style="font-size:11px; color:#64748B; margin-top:2px;">Standardized employment contracts and customizable staff handbooks.</p>
+      </div>
+
+      <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:12px; border-radius:6px;">
+        <strong style="font-size:12px; color:#0F2B48;">3. Zero-Penalty Payroll Management</strong>
+        <p style="font-size:11px; color:#64748B; margin-top:2px;">Automated payroll calculation and on-time statutory remittances.</p>
+      </div>
+    </div>
+
+    <!-- Page 3: Inside Right -->
+    <div class="page-box" style="background:#F8FAFC;">
+      <div style="font-size:10px; font-weight:700; color:#0369A1; text-transform:uppercase; margin-bottom:8px;">Page 3 • Industry Sectors</div>
+      <h2>Tailored Industry Solutions</h2>
+      <p style="font-size:12.5px; color:#475569; line-height:1.6; margin-bottom:14px;">
+        Deep regulatory familiarity across key economic sectors in Kenya and East Africa.
+      </p>
+
+      <ul style="font-size:12px; color:#334155; line-height:1.8; list-style:none;">
+        <li>• <strong>Healthcare and Medical Facilities:</strong> Shift policies and clinical grading</li>
+        <li>• <strong>SMEs and Commercial Trading:</strong> Founder scaling and contract clarity</li>
+        <li>• <strong>Technology and Startups:</strong> Remote contracts, IP protection, and equity</li>
+        <li>• <strong>Faith-Based and NGOs:</strong> Grant compliance, ethics, and board governance</li>
+        <li>• <strong>Logistics and Supply Chain:</strong> Overtime tracking and driver contracts</li>
+      </ul>
+
+      <div style="margin-top:20px; background:#FFFFFF; border:1px solid #CBD5E1; padding:12px; border-radius:6px; font-size:11px; color:#475569;">
+        <strong>Statutory Compliance Guarantee:</strong> Every engagement is audited against the Employment Act 2007, KRA, and NSSF guidelines.
+      </div>
+    </div>
+  </div>
+
+  <!-- SPREAD 2: OUTSIDE PAGES (Page 4 Back Cover and Page 1 Front Cover) -->
+  <div class="bifold-spread">
+    <!-- Page 4: Back Cover -->
+    <div class="page-box" style="background:#0F2B48; color:#FFFFFF;">
+      <div style="font-size:10px; font-weight:700; color:#C9A45C; text-transform:uppercase; margin-bottom:8px;">Page 4 • Contact Information</div>
+      <h2 style="color:#FFFFFF;">Partner With Us</h2>
+      <p style="font-size:12px; color:#CBD5E1; line-height:1.5; margin-bottom:16px;">
+        Reach out for a confidential assessment of your organization's employment policies and payroll systems.
+      </p>
+
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); padding:14px; border-radius:6px; font-size:11.5px; line-height:1.6; color:#CBD5E1;">
+        <strong>Talent Bridge Global Solutions</strong><br/>
+        Valley View Office Park, City Park Drive<br/>
+        Parklands, Nairobi, Kenya<br/><br/>
+        Email: info@talentbridgeglobal.co.ke<br/>
+        Tel: +254 700 000 000<br/>
+        Web: www.talentbridgeglobal.co.ke
+      </div>
+    </div>
+
+    <!-- Page 1: Front Cover -->
+    <div class="page-box" style="background:#0A1D32; color:#FFFFFF;">
+      <div style="font-size:10px; font-weight:700; color:#2EA44F; text-transform:uppercase; margin-bottom:8px;">Page 1 • Front Cover</div>
+      <h2 style="color:#FFFFFF; font-size:24px;">TALENT BRIDGE<br/><span style="color:#60A5FA; font-size:16px;">GLOBAL SOLUTIONS</span></h2>
+      <div style="font-size:10.5px; font-weight:700; color:#2EA44F; text-transform:uppercase; letter-spacing:0.1em; margin:8px 0 16px 0;">
+        Connecting Talent • Bridging Success
+      </div>
+
+      <p style="font-size:13px; color:#CBD5E1; line-height:1.6; margin-bottom:16px;">
+        Executive Outsourced HR, Policy Frameworks, and Zero-Penalty Payroll Services.
+      </p>
+
+      <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; font-size:11px; color:#E2E8F0;">
+        Lead Consultant: Rose Chege<br/>
+        Certified HRBP and Labour Law Compliance Specialist
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

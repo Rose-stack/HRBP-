@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Executive Business Cards (Print Ready) | Talent Bridge Global Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #F1F5F9;
+      color: #0F172A;
+      padding: 30px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .no-print {
+      max-width: 650px;
+      margin: 0 auto 20px auto;
+      background: #FFFFFF;
+      padding: 14px 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .print-btn {
+      background: #0F2B48;
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .cards-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    /* Standard 3.5" x 2.0" at 96 DPI screen preview ~ 336px x 192px (scaled up 1.3x for clarity) */
+    .biz-card {
+      width: 420px;
+      height: 240px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      position: relative;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .card-front {
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+    }
+    .card-back {
+      background: #0F2B48;
+      color: #FFFFFF;
+    }
+    @media print {
+      body { background: transparent; padding: 0; }
+      .no-print { display: none; }
+      .cards-container { gap: 20px; }
+      .biz-card { box-shadow: none; border-radius: 0; }
+      @page { size: portrait; margin: 10mm; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print">
+    <div>
+      <strong style="color:#0F2B48;">Executive Business Cards (Standard 3.5" × 2.0")</strong>
+      <div style="font-size:11px; color:#64748B;">Front and Back layouts with print trim lines. Ready for 350gsm matte stock.</div>
+    </div>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="cards-container">
+    <!-- FRONT SIDE -->
+    <div>
+      <div style="font-size:11px; font-weight:700; color:#64748B; margin-bottom:6px; text-align:center;">FRONT (Executive Contact)</div>
+      <div class="biz-card card-front">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+          <div>
+            <div style="font-family:'Outfit', sans-serif; font-size:15px; font-weight:800; color:#0F2B48; line-height:1.1;">TALENT BRIDGE</div>
+            <div style="font-size:9px; font-weight:700; color:#2EA44F; letter-spacing:0.12em;">GLOBAL SOLUTIONS</div>
+          </div>
+          <!-- Mini Emblem -->
+          <svg width="32" height="32" viewBox="0 0 200 200">
+            <path d="M 28,106 C 24,62 58,26 100,24 C 142,26 176,62 172,106" stroke="#2EA44F" stroke-width="9" stroke-linecap="round" fill="none"/>
+            <path d="M 28,110 C 32,154 66,186 100,186 C 134,186 168,154 172,110" stroke="#0F2B48" stroke-width="7" stroke-linecap="round" fill="none"/>
+            <circle cx="100" cy="116" r="32" fill="#E8F2FA" stroke="#3E7CB1" stroke-width="2.5"/>
+            <circle cx="76" cy="68" r="7.5" fill="#0F2B48"/>
+            <circle cx="100" cy="66" r="7.5" fill="#2EA44F"/>
+            <circle cx="124" cy="68" r="7.5" fill="#0F2B48"/>
+          </svg>
+        </div>
+
+        <div>
+          <div style="font-family:'Outfit', sans-serif; font-size:18px; font-weight:800; color:#0F2B48;">Rose Chege</div>
+          <div style="font-size:10px; font-weight:700; color:#2EA44F; text-transform:uppercase; letter-spacing:0.05em;">Lead Consultant and HR Business Partner</div>
+          <div style="font-size:9px; color:#64748B;">Founder • Certified IHRM Professional</div>
+        </div>
+
+        <div style="border-top:1px solid #E2E8F0; padding-top:8px; font-size:9.5px; color:#475569; line-height:1.5;">
+          <div><strong>Email:</strong> rose@talentbridgeglobal.co.ke | info@talentbridgeglobal.co.ke</div>
+          <div><strong>Tel:</strong> +254 700 000 000 | <strong>Web:</strong> www.talentbridgeglobal.co.ke</div>
+          <div><strong>Location:</strong> Valley View Office Park, Parklands, Nairobi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACK SIDE -->
+    <div>
+      <div style="font-size:11px; font-weight:700; color:#64748B; margin-bottom:6px; text-align:center;">BACK (Brand and Strategic Pillars)</div>
+      <div class="biz-card card-back">
+        <div style="text-align:center; margin-top:8px;">
+          <div style="font-family:'Outfit', sans-serif; font-size:16px; font-weight:800; color:#FFFFFF;">TALENT BRIDGE GLOBAL</div>
+          <div style="font-size:9.5px; font-weight:700; color:#2EA44F; letter-spacing:0.1em; text-transform:uppercase; margin-top:2px;">Connecting Talent • Bridging Success</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); padding:10px 14px; border-radius:6px; font-size:9px; color:#CBD5E1; line-height:1.6;">
+          <div>• Fractional HR Business Partnering</div>
+          <div>• Statutory Payroll Management (Zero-Penalty Guarantee)</div>
+          <div>• Employment Policies and Staff Handbooks</div>
+          <div>• Executive Search and Structured Onboarding</div>
+          <div>• Labour Law Compliance and Pre-Litigation Defense</div>
+        </div>
+
+        <div style="text-align:center; font-size:8.5px; color:#94A3B8;">
+          Kenya Employment Act 2007 Compliance • IHRM Accredited
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

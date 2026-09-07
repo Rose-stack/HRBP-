@@ -1,0 +1,8 @@
+{
+  "name": "Remix Talent Bridge Global Solutions",
+  "description": "Executive HRBP consultancy and outsourced HR, policy, and payroll services connecting African talent with global and local opportunities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
